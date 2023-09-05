@@ -1,0 +1,470 @@
+.ads {
+
+    background-color: #EEEEEE;
+    height: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 30px;
+    z-index: 9999;
+    padding: 15px 100px !important;
+}
+
+.ads h1 {
+    padding: 7px;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+header {
+    background: #ffffff !important;
+    border-bottom: 1px solid #3333332f;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    position: fixed;
+    top:30px  !important;
+    z-index: 9999;
+
+}
+
+
+header .logo a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.9rem;
+    font-weight: bold;
+    color: #333;
+
+}
+
+header .logo img {
+    margin-right: 1.7rem;
+    filter: brightness(0%);
+}
+
+header nav a {
+    font-size: 1.4rem;
+    margin: 0px 2rem;
+    font-weight: 600;
+    position: relative;
+    transition: 600ms;
+    color: #333;
+}
+
+header nav a::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 5%;
+    left: 0;
+    bottom: -2px;
+    background-color: var(--orange--color);
+    transition: 600ms;
+    color: #333;
+}
+
+header nav a:hover::before {
+    width: 100%;
+}
+
+header .icon_hero a {
+    font-size: 1.4rem;
+    margin: 0px 1.4rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.cart-cont{
+    position: fixed;
+top: 100px !important;
+padding: 40px 100px;
+width: 100%;
+min-height: 100%;
+background-color: #fff;
+
+z-index:-1 ;
+transition: 400ms;
+overflow: scroll;
+opacity: 0;
+
+}
+.cart-cont .titel{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ .cart-cont .titel .icon-cart i{
+    padding: 15px;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    background-color: #FBB03B;
+    color: #fff;
+}
+.cart-cont .titel .icon-cart i + i{
+color:#D8D8D8 ;
+background-color: transparent;
+position: relative;
+margin-left:80px ;
+
+} 
+.cart-cont .titel .icon-cart i + i::after{
+
+content: '';
+position: absolute;
+width: 70px;
+height: 1.5px;
+top: 50%;
+
+left: 50px;
+background-color: #d8d8d88a;
+
+}
+.cart-cont .body_card{
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto ;
+   
+}
+.cart-cont .body_card img{
+    width: 50px;
+    height: 50px;
+}
+
+
+ .show2{
+
+    opacity: 1;
+    z-index: 9999;
+} 
+
+.mian{
+    margin-top: 160px;
+    
+}
+
+.Breadcrumbs{
+    height: 10vh;
+}
+.Breadcrumbs a{
+    margin-right: 5px;
+    color:#B2B2B2 ;
+    font-size: 1.2rem;
+}
+.Breadcrumbs .active{
+    
+    color:#000000 ;
+}
+
+.Breadcrumbs a + a::before{
+    content: '>';
+    margin-right: 5px;
+}
+
+.mian .Summer-Vibes {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+
+.mian .Summer-Vibes .imgas{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.mian .Summer-Vibes .imgas .allImg img{
+    display: block;
+}
+.on{
+   border: 1px solid #111;
+}
+.mian .Summer-Vibes .imgas .allImg img{
+    width: 100px;
+    height: 120px;
+    margin-bottom: 10px;
+
+}
+
+.mian .Summer-Vibes .imgas .bag-img img{
+    width: 380px;
+    height:  460px;
+  
+}
+
+
+
+.mian .Summer-Vibes .content{
+    width:50%;
+    position: relative;
+   
+   
+}
+
+
+.mian .Summer-Vibes .content .twsel{
+    position: absolute;
+    bottom: 108%;
+    width: 100%;
+display: flex;
+align-items: center;
+justify-content: start;
+
+}
+
+.mian .Summer-Vibes .content .twsel .obx1{
+    display: flex;
+    align-items: center;
+    
+    gap: 12px;
+    width:100%;
+    
+}
+.mian .Summer-Vibes .content .twsel .obx1 i{
+    font-size: 1.3rem;
+
+}
+.mian .Summer-Vibes .content .twsel .obx1 h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.mian .Summer-Vibes .content .twsel .obx1 h5{
+  font-size: 1.2rem;
+    font-weight:200;
+    width: 300px;
+}
+
+
+
+.mian .Summer-Vibes .content .el-Tshirt .sale{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px ;
+}
+
+.mian .Summer-Vibes .content .el-Tshirt .sale > h5 {
+    
+    color: #ffffff;
+    background-color: #ff0000;
+    font-size: 1.2rem;
+    padding: 7px 10px;
+    border-radius: 20px;
+}
+.mian .Summer-Vibes .content .el-Tshirt .sale .id h4  {
+font-size: 1.2rem;
+color: #CECECE;
+font-weight:400 ;
+    
+}
+
+.el-Tshirt .titel h1 {
+font-size: 3rem;
+font-weight: 200;
+}
+
+.el-Tshirt .titel .pic-brand{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.el-Tshirt .titel .pic-brand .pic h1{  
+display: inline;
+font-size: 3rem;
+font-weight: 300;
+color:#FF0000 ;
+margin-right: 30px;
+}
+.el-Tshirt .titel .pic-brand .pic del{  
+text-decoration: line-through ;
+color:#CECECE ;
+font-size: 3rem;
+font-weight: 300;
+}
+
+.el-Tshirt .titel .pic-brand h1{
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.colors{
+    margin: 30px 0;
+}
+.el-Tshirt .colors h1{
+font-size: 1.3rem;
+margin-bottom: 12px;
+}
+
+.el-Tshirt .colors .color{
+    display: flex;
+align-items: start;
+justify-content: start;
+
+}
+
+.el-Tshirt .colors .color .box-color {
+
+width: 40px;
+height: 40px;
+background-color: #ffffff;
+border: 1px solid #E6E6E6;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+}
+
+.el-Tshirt .colors .color .box-color *{
+
+width: 20px;
+height: 20px;
+border: 1px solid #E6E6E6;
+transition: 600ms;
+}
+.el-Tshirt .colors .color .box-color:hover *{
+
+width: 100%;
+height: 100%;
+border: 1px solid #E6E6E6;
+}
+.box-color.onColor *{
+    width: 100% !important;
+height: 100% !important;
+
+}
+
+.el-Tshirt .colors .color .box-color .black {
+background-color: #000000;
+
+
+}
+.el-Tshirt .colors .color .box-color .wieth {
+    background-color: #ffffff;
+}
+.el-Tshirt .colors .color .box-color .braynd {
+    
+    background-color: #da9d9d;
+}
+.el-Tshirt .colors .color .box-color .yallow {
+    
+    background-color: #c5c186;
+}
+
+
+.el-Tshirt .sizeing {
+    margin: 30px 0;
+}
+.el-Tshirt .sizeing h1 {
+    font-size: 1.3rem;
+margin-bottom: 12px;
+
+}
+.el-Tshirt .sizeing .size {
+    display: flex;
+}
+.el-Tshirt .sizeing .size * {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #D8D8D8;
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 300ms;
+    cursor: pointer;
+
+
+}
+
+.onSize{
+    background-color: #fce7c4;
+    color: #234;
+}
+.el-Tshirt .sizeing .size *:hover {
+    background-color: #fce7c4;
+    color: #234;
+   
+}
+.el-Tshirt .Quantity {
+    margin: 30px 0;
+}
+.el-Tshirt .Quantity h1{
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    
+}
+.el-Tshirt .Quantity .content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+}
+
+.el-Tshirt .Quantity .order-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    border: 1px solid #D8D8D8;
+    padding: 7px 25px;
+    border-radius: 25px;
+}
+.el-Tshirt .Quantity .order-number p {
+    font-size: 1.6rem;
+    margin-inline:12px ;
+}
+.el-Tshirt .Quantity .order-number h5 {
+    font-size: 2.2rem;
+    font-weight: 100;
+    cursor: pointer;
+
+
+}
+
+.el-Tshirt .Quantity .add-cart {
+    background-color: #FBB03B;
+    border-radius: 25px;
+    padding: 11px 30px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    border: 1px solid transparent;
+    margin-inline:17px ;
+    cursor: pointer;
+}
+.el-Tshirt .Quantity .like {
+background-color: transparent;
+border: 1px solid #D8D8D8;
+border-radius: 50%;
+padding: 12px;
+width: 50px;
+height: 50px;
+font-size: 2.2rem;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+transition: 300ms;
+
+
+}
+
+.onLike{
+    
+   
+    background-color:#fce7c4 !important;
+}

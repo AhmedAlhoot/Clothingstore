@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="Responsive Design/mediapag1.css" />
+    <link rel="shortcut icon" href="/img/logowebsite.svg" type="image/x-icon" />
+    <title>E-Shop</title>
+  </head>
+  <body>
+    <header class="container">
+      <div class="logo">
+        <a href="#"><img src="img/logowebsite.svg" alt="logo" /> E-Shop</a>
+      </div>
+      <nav id="navbar">
+        <a id="man" class="activexx" href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">Kids</a>
+      </nav>
+      <div class="icon_hero">
+        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a class="btn-cartt"><i class="fa-regular fa-cart-shopping"></i></a>
+        <a href="#" id="bargat_menu"> <i class="fa-solid fa-bars"></i></a>
+        <a href="#"><i id="Icon-user" class="fa-regular fa-user"></i></a>
+      </div>
+    </header>
+
+    <div class="cart-cont">
+      <div class="titel">
+        <h1>Shopping Cart</h1>
+        <div class="icon-cart">
+          <i class="fa-regular fa-cart-shopping"></i>
+
+          <i class="fa-light fa-truck fa-flip-horizontal"></i>
+        </div>
+      </div>
+
+      <div class="body_card"></div>
+      <div class="footer_caet">
+        <a href="index2.html" class="back"
+          ><i class="fa-regular fa-arrow-left"></i> Continue Shopping</a
+        >
+        <div class="btn_footer_cart">
+          <input type="text" placeholder="Promo Code" />
+          <div class="Total_cost">
+            <h1>Total cost</h1>
+            <h1>$0</h1>
+          </div>
+          <button>CHECKOUT</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- sign-in alert -->
+
+    <div class="sgin_in" style="display: none">
+      <div class="form-box login">
+        <div class="exit">
+          <i class="fa-light fa-x"></i>
+        </div>
+
+        <div class="titel">
+          <h2>Log in</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea?</p>
+        </div>
+        <form action="#">
+          <div class="input-box">
+            <span class="icon"></span>
+            <i class="fa-regular fa-envelope-open iconstyle"></i>
+            <input id="email" type="email" name="email" placeholder="E-mail" />
+          </div>
+
+          <div class="input-box">
+            <i class="fa-regular fa-lock iconstyle"></i>
+            <span class="icon"></span>
+            <input
+              id="pass_word"
+              type="password"
+              name="password"
+              placeholder="Password"
+            />
+          </div>
+          <div class="remember-forget">
+            <label>
+              <input type="checkbox" />
+
+              <h1>Keep me signed in</h1>
+            </label>
+            <a href="">Forget Password ?</a>
+          </div>
+
+          <div class="allBTN">
+            <div class="btn_soahl">
+              <a href="#" class="facbook"
+                ><i class="fa-brands fa-facebook-f"></i>facbook</a
+              >
+              <a href="#" class="Gmail"
+                ><img src="icon/gmail.svg" alt="" /> Gmail</a
+              >
+            </div>
+            <button type="" class="btnaa">Sign in</button>
+          </div>
+
+          <div class="log-register">
+            <p>
+              Not a member yet?
+              <a href="" class="register-link"> Sign up </a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- end sign in  -->
+
+    <!-- *sign-up -->
+
+    <div class="wrapper signup" style="display: none">
+      <div class="exit">
+        <i class="fa-light fa-x"></i>
+      </div>
+
+      <div class="titel">
+        <h2>Create an account and discover the benefits</h2>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard
+        </p>
+      </div>
+
+      <!-- <form action="#"> -->
+      <div class="input-box">
+        <input type="text" required name="" placeholder="First Name" />
+      </div>
+
+      <div class="input-box">
+        <input type="text" required name="" placeholder="Last Name" />
+      </div>
+
+      <div class="input-box">
+        <input type="email" required name="" placeholder="E-mail" />
+      </div>
+
+      <div class="input-box">
+        <input type="password" required name="" placeholder="Password" />
+      </div>
+
+      <div class="inp-check">
+        <input type="checkbox" name="" id="contant-lable" required />
+
+        <label for="contant-lable"
+          >I agree to the Google Terms of Service andPrivacy Policy</label
+        >
+      </div>
+
+      <button type="submit" class="btnaa">Sign up</button>
+
+      <div class="link-footer">
+        <a href="#">Are you already a member ?</a>
+      </div>
+    </div>
+
+    <!-- \\sign-up -->
+
+    <!-- Slider main container -->
+    <section class="hero">
+      <div class="mancontant contantbox mnuo" style="display: none">
+        <div class="box boxscol1">
+          <h2><a href="">Sale</a></h2>
+          <h2><a href="">Bestsellers</a></h2>
+          <h2><a href="">Latest Arrivals</a></h2>
+        </div>
+
+        <div class="box boxscol2">
+          <h2><a href="">Shoes</a></h2>
+          <a href="">Lifestyle</a>
+          <a href="">Running</a>
+          <a href="">Soccer</a>
+          <a href="">Basketball</a>
+          <a href="">Football</a>
+          <a href="">Golf</a>
+          <a href="">Baseball</a>
+        </div>
+
+        <div class="box boxscol3">
+          <h2><a href="">Clothing</a></h2>
+          <a href="">Pants</a>
+          <a href="">Hoodies & Sweatshirts</a>
+          <a href="">Jackets & Vests</a>
+          <a href="">Track Suits</a>
+          <a href="">Short Sleeve Shirts</a>
+          <a href="">T-Shirts</a>
+          <a href="">Jerseys</a>
+          <a href="">Shorts</a>
+          <a href="">Jeans</a>
+        </div>
+        <div class="box boxscol4">
+          <h2><a href="">Accesorries</a></h2>
+          <a href="">Backpacks</a>
+          <a href="">Caps & Hats</a>
+          <a href="">Watches</a>
+          <a href="">Belts</a>
+          <a href="">Bags</a>
+          <a href="">Wallets & Cases</a>
+          <a href="">Scarves</a>
+          <a href="">Glasses</a>
+        </div>
+      </div>
+
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="img/ZR1.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="img/eoeoe.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="img/egzr.jpg" alt="" /></div>
+        </div>
+      </div>
+      <div class="swiper-scrollbar"></div>
+      <div class="btn-swpre">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <div class="content">
+        <h1>Sale of the summer collection</h1>
+        <a href="#"> <i class="fa-solid fa-arrow-right"></i> SHOP NOW </a>
+      </div>
+      <div class="box-abut">
+        <div class="box1">
+          <div class="icon">
+            <i class="fa-thin fa-truck-fast"></i>
+          </div>
+          <div class="contnet">
+            <h5>Free Shipping</h5>
+            <p>On purchases over purchases over $199</p>
+          </div>
+        </div>
+
+        <div class="box1">
+          <div class="icon">
+            <i class="fa-solid fa-face-smile-beam"></i>
+          </div>
+          <div class="contnet">
+            <h5>99% Satisfied Customers</h5>
+            <p>Our clients' opinions speak for themselves</p>
+          </div>
+        </div>
+
+        <div class="box1">
+          <div class="icon">
+            <i class="fa-light fa-shield-keyhole"></i>
+          </div>
+          <div class="contnet">
+            <h5>Originality Guaranteed</h5>
+            <p>30 days warranty for each product from our store</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slidre container">
+      <div class="row">
+        <div class="huv col-6">
+          <img src="img/egzr.jpg" alt="" />
+          <div class="content">
+            <h5>New arrivals are now!</h5>
+            <a href="#">Show collection</a>
+          </div>
+        </div>
+
+        <div class="huv col">
+          <img src="img/ZR1rrrrrrr.png" alt="" />
+          <div class="content">
+            <h5>Basic shirts $29,99</h5>
+            <a href="#">More details</a>
+          </div>
+        </div>
+
+        <div class="huv col">
+          <img src="img/fefefe.jpg" alt="" />
+          <div class="descont">
+            <h4>-50%</h4>
+          </div>
+          <div class="content">
+            <h5>Sale this shirts summer</h5>
+            <a href="#">VIEW ALL</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- * man part -->
+    <div class="Fashion-partions container">
+      <div class="titles-fashion">
+        <h3>Selected just for you</h3>
+        <a class="Show_more" href="peg3/index3.html">Show more</a>
+      </div>
+
+      <div class="models-info">
+        <div class="models">
+          <a href="index2.html">
+            <img src="img/ZC1.jpg" alt="" />
+            <div class="descont"><h4>-30%</h4></div>
+            <div class="card_contant">
+              <div class="title_img">T-Shirt Summer Vibes</div>
+              <span> <del>$29.00</del> $19.00</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="models">
+          <a href="index2.html">
+            <img src="img/ZT1.jpg" alt="" />
+            <div class="card_contant">
+              <div class="title_img">T-Shirt Summer Vibes</div>
+              <span> $19.00</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="models">
+          <a href="index2.html">
+            <img src="img/ZT2.jpg" alt="" />
+            <div class="card_contant">
+              <div class="title_img">T-Shirt Summer Vibes</div>
+              <span>$19.00</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="models">
+          <a href="index2.html">
+            <img src="img/ZT3.jpg" alt="" />
+
+            <div class="card_contant">
+              <div class="title_img">T-Shirt Summer Vibes</div>
+              <span> $19.00</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- -- weman part -->
+
+    <section class="choose-us container">
+      <h1>Why should you choose us?</h1>
+      <div class="choose-us-card">
+        <div class="card">
+          <i class="fa-thin fa-truck-fast"></i>
+          <h4>Free Shipping</h4>
+          <p>
+            All purchases over $199 are eligible for free shipping via USPS
+            First Class Mail.
+          </p>
+        </div>
+
+        <div class="card">
+          <i class="fa-light fa-money-bill"></i>
+          <h4>Easy Payments</h4>
+          <p>
+            All payments are processed instantly over a secure payment protocol.
+          </p>
+        </div>
+
+        <div class="card">
+          <i class="fa-light fa-shield-keyhole"></i>
+
+          <h4>Money-Back Guarantee</h4>
+          <p>
+            If an item arrived damaged or you've changed your mind, you can send
+            it back for a full refund.
+          </p>
+        </div>
+
+        <div class="card">
+          <i class="fa-solid fa-badge-check"></i>
+          <h4>Finest Quality</h4>
+          <p>
+            Designed to last, each of our products has been crafted with the
+            finest materials.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- * man part -->
+    <!-- * man part -->
+    <div class="Fashion-partions container">
+      <div class="titles-fashion">
+        <h3>Selected just for you</h3>
+        <a class="Show_more" href="/peg3/index3.html">Show more</a>
+      </div>
+
+      <div class="models-info">
+        <div class="models">
+          <img src="img/ZT3.jpg" alt="" />
+
+          <div class="card_contant">
+            <div class="title_img">T-Shirt Summer Vibes</div>
+            <span> $19.00</span>
+          </div>
+        </div>
+
+        <div class="models">
+          <img src="img/ZT1.jpg" alt="" />
+
+          <div class="card_contant">
+            <div class="title_img">T-Shirt Summer Vibes</div>
+            <span> $19.00</span>
+          </div>
+        </div>
+
+        <div class="models">
+          <img src="img/ZC1.jpg" alt="" />
+          <div class="descont"><h4>-30%</h4></div>
+          <div class="card_contant">
+            <div class="title_img">T-Shirt Summer Vibes</div>
+            <span> <del>$29.00</del> $19.00</span>
+          </div>
+        </div>
+
+        <div class="models">
+          <img src="img/ZT2.jpg" alt="" />
+
+          <div class="card_contant">
+            <div class="title_img">T-Shirt Summer Vibes</div>
+            <span>$19.00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -- weman part -->
+
+    <div class="form-bg container">
+      <div class="form">
+        <div class="content">
+          <h1>
+            Subscribe to our newsletter and receive exclusive offers every week
+          </h1>
+        </div>
+        <form action="#">
+          <input type="email" placeholder="Enter your email" />
+          <button>Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <footer class="container">
+      <div class="content">
+        <a href="#"
+          ><img src="img/logowebsite.svg" alt="logo" /> <span>E-</span> Shop</a
+        >
+        <p>
+          House My Brand designs clothing for the young, the old & everyone in
+          between – but most importantly, for the fashionable
+        </p>
+        <div class="icon-footr">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="list-footer">
+        <div class="menu-one">
+          <h1>Shopping online</h1>
+          <ul>
+            <li><a href="#">Order Status</a></li>
+            <li><a href="#">Shipping and Deliver</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Payment Option</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="menu-one">
+          <h1>Information</h1>
+          <ul>
+            <li><a href="#">Gift Cards</a></li>
+            <li><a href="#">Find a store</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="#">Bacome a member</a></li>
+            <li><a href="#">Site feedback</a></li>
+          </ul>
+        </div>
+
+        <div class="menu-one">
+          <h1>Contact</h1>
+          <ul>
+            <li><a href="#">store@uikit.com</a></li>
+            <li><a href="#">Hotline: +1 131 138 138</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div class="list-sec">
+      <h1>DESIGN BY ICEO.CO - © 2019. ALL RIGHTS RESERVED.</h1>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script src="js/app1.js"></script>
+  </body>
+</html>
